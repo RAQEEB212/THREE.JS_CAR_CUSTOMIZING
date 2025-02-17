@@ -9,9 +9,9 @@ export default function AboutSection() {
     <h1 className="font-bold text-5xl text-center mb-7">About Us</h1>
     <p className="text-2xl font-normal text-center">Car Banao is an innovative startup revolutionizing the automotive industry in Pakistan. We specialize in providing custom car-building solutions, vehicle design services, and personalized automotive experiences.</p>
     
-    <div className="grid grid-cols-2 grid-flow-row gap-5">
+    <div className="grid grid-cols-2 grid-flow-row gap-5 ">
     <img src={aboutImage1} alt="" className="rounded-4xl h-80 col-span-2 w-full object-cover"/>
-    <div className="flex flex-col justify-center gap-y-3">
+    <div className="flex flex-col justify-center gap-y-3 max-[980px]:col-span-2">
       <h1 className="font-bold text-5xl">Our Mission</h1>
       <p className="font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       <div className="text-white flex flex-row gap-3">
@@ -25,7 +25,7 @@ export default function AboutSection() {
     </div>
       </div>
     </div>
-    <img src={aboutImage2} alt="" className="rounded-4xl"/>
+    <img src={aboutImage2} alt="" className="rounded-4xl h-80 w-full object-cover max-[980px]:col-span-2 max-[980px]:row-start-3 "/>
     </div>
     
     
