@@ -1,14 +1,14 @@
 import React from 'react'
-import OverlayCard from './OverlayCard'
-import CrouselImage from './CrouselImage'
+import HeroOverlayCard from './HeroOverlayCard'
+import HeroCrouselImage from './HeroCarouselImage'
 
 export default function Slide() {
   return (
     <div>
     {/* overlay section */}
-    <OverlayCard/>
+    <HeroOverlayCard/>
     {/* Hero picture */}
-    <CrouselImage/>
+    <HeroCrouselImage/>
         </div>
   )
 }

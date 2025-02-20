@@ -5,6 +5,9 @@ import team_member3 from "../assets/images/team_member3.jpg"
 import client_profile1 from "../assets/images/client_img1.png"
 import client_profile2 from "../assets/images/client_img2.png"
 
+import hero_image1 from "../assets/images/hero_image.jpg"
+
+
 const listData1 = [
   {
     svgFile: (
@@ -216,10 +219,27 @@ const clients = [
   }
 ]
 
+const modelData = [
+  {
+    model:hero_image1,
+    title:"6D Car Modification and Discussion Platform",
+    desc:"Discover Car Banao’s amazing deals on car Modification. Select from a range of car options and local specials to get the best deal"
+  },
+  {
+    model:hero_image1,
+    title:"5D Car Modification and Discussion Platform",
+    desc:"Discover Car Banao’s amazing deals on car Modification. Select from a range of car options and local specials to get the best deal"
+  },
+  {
+    model:hero_image1,
+    title:"3D Car Modification and Discussion Platform",
+    desc:"Discover Car Banao’s amazing deals on car Modification. Select from a range of car options and local specials to get the best deal"
+  },
+]
 
 
 
 
 
 
-export { listData1, listData2,teamData,clients };
+export { listData1, listData2,teamData,clients,modelData };

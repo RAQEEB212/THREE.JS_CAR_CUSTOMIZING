@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../../components/ui/Button";
-import Slide from "./Crousel/Slide";
+import Slide from "./Carousel/Slide";
+import HeroCrousel from "./Carousel/HeroCarousel";
 
 export default function HeroSection() {
   return (
@@ -13,9 +14,9 @@ export default function HeroSection() {
       </div>
 
       {/* Crausel */}
-      <section className="pl-32 relative z-50">
+      <section className="pl-32 h-full relative z-50">
         {/* slide#1 */}
-        <Slide />
+       <HeroCrousel/>
       </section>
     </section>
   );

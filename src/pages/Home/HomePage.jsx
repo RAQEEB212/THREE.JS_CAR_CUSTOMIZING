@@ -10,8 +10,8 @@ import ContentList from "./ContentLayout/ContentList.jsx";
 import { listData1, listData2 } from "../../data/homePageData.jsx";
 import Wrapper from "../../components/ui/Wrapper.jsx";
 import AboutSection from "./AboutSection.jsx";
-import TeamCrousel from "./Crousel/TeamCrousel.jsx";
-import ClientCrousel from "./Crousel/ClientCrousel.jsx";
+import TeamCrousel from "./Carousel/TeamCarousel.jsx";
+import ClientCrousel from "./Carousel/ClientCarousel.jsx";
 import Heading from "./Heading.jsx";
 
 export default function () {

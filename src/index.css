@@ -16,5 +16,6 @@
 @theme {
   --breakpoint-xmd: 50rem;
   --breakpoint-singleslide: 53.125rem;
+  --breakpoint-tablet:65.625rem;
 }
 
