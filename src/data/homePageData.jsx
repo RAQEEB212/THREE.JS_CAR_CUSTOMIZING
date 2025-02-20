@@ -198,6 +198,21 @@ const clients = [
     profile:client_profile2,
     name:"Robert Fox",
     feedback:"During my last trip, I used a Carent sport car . The car was completely clean and had enough gas."
+  },
+  {
+    profile:client_profile1,
+    name:"John chreish",
+    feedback:"I rented a car for a one-week trip from Carnet on the recommendation of my friend. Actually, I am satisfied with them."
+  },
+  {
+    profile:client_profile2,
+    name:"Santa",
+    feedback:"During my last trip, I used a Carent sport car . The car was completely clean and had enough gas."
+  },
+  {
+    profile:client_profile2,
+    name:"Pokie",
+    feedback:"During my last trip, I used a Carent sport car . The car was completely clean and had enough gas."
   }
 ]
 

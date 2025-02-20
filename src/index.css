@@ -13,3 +13,8 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+@theme {
+  --breakpoint-xmd: 50rem;
+  --breakpoint-singleslide: 53.125rem;
+}
+

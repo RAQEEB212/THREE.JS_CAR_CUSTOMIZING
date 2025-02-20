@@ -17,6 +17,8 @@ import Heading from "./Heading.jsx";
 export default function () {
   return (
     <>
+
+     {/* Hero section */}
       <HeroSection />
 
       {/* our services section */}
