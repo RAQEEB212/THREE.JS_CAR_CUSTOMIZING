@@ -6,12 +6,11 @@ export default function SocialHandles() {
   return (
 
     // social links
-    <div className='flex flex-row items-center gap-x-6'>
+    <div className='flex flex-row items-center text-base gap-x-6 text-white'>
        
-       <Link to="" className='p-0.5 bg-white  rounded-sm'><FaFacebookF/></Link>
-       <Link to="" className='p-0.5 bg-white rounded-sm'><FaWhatsapp/></Link>
-       <Link to="" className='p-0.5 bg-white rounded-sm'><FaTwitter/></Link>
-       <Link to="" className='p-0.5 bg-white rounded-sm'><FaInstagram/></Link>
+       <Link to="" className='p-2.5 bg-blend-gray  rounded-full'><FaFacebookF/></Link>
+       <Link to="" className='p-2.5 bg-blend-gray rounded-full'><FaTwitter/></Link>
+       <Link to="" className='p-2.5 bg-blend-gray rounded-full'><FaInstagram/></Link>
       
     </div>
   )

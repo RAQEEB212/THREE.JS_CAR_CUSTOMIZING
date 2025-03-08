@@ -10,13 +10,6 @@ export default function App() {
 <Layout>
 <WebRoutes/>  
 </Layout>
-    
-
-
-  
-    
-    
-    
     </>
   )
 }

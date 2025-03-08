@@ -13,7 +13,7 @@ teamData.map((member,index)=>{
 
 
 return (
-  <div className='bg-black flex flex-col min-w-48 items-center flex-1 rounded-lg p-6'>
+  <div key={index} className='bg-black flex flex-col min-w-48 items-center flex-1 rounded-lg p-6'>
     {/* profile pic */}
 <img src={member.profile}  className='w-32 h-32 rounded-full mb-3'/>
 {/* name */}
