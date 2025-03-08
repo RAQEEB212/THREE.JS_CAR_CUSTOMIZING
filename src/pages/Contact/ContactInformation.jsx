@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import SocialHandles from '../../components/ui/SocialHandles'
 import { FaEnvelope, FaPhone, FaLocationArrow } from "react-icons/fa6";
 import Border from "../../assets/images/corner-border-circle.png"
+import { toast } from 'react-toastify';
+import notificationPopup from '../../notifications/NotificationPopup';
+
+
 
 export default function ContactInformation() {
-
-
 const numberCopied = async (event) =>{
 
  const targetedWrapper = event.target;
@@ -13,17 +15,43 @@ const number = targetedWrapper.textContent;
 
 try{
    await navigator.clipboard.writeText(number);
-    alert("Copied: "+ number)
+ 
+    notificationPopup("Successfully Copied", "success");
+   
 }
 catch (error) {
 console.log("Failed coping")
+
 }
 }
 
+const showEmailDialouge = () =>{
 
+toast(
+<div>
+
+
+
+</div>,
+
+
+
+{ 
+    position: "top-right",
+    hideProgressBar: true,
+    closeOnClick: true,
+   
+   })
+
+
+
+
+
+};
 
 
   return (
+    <>
      <div className="overflow-hidden bg-black p-8 rounded-xl space-y-16 relative">
             {/* heading */}
             <div className="space-y-1.5">
@@ -40,7 +68,7 @@ console.log("Failed coping")
               </div>
               <div className="flex flex-row items-center gap-x-7 text-white">
                 <FaEnvelope />
-                <p className="font-normal text-base">demo@gmail.com</p>
+                <p className="font-normal text-base" onClick={showEmailDialouge}>demo@gmail.com</p>
               </div>
               <div className="flex flex-row items-center gap-x-7 text-white">
                 <FaLocationArrow />
@@ -49,13 +77,15 @@ console.log("Failed coping")
             </div>
     
             {/* Social links */}
-    
     <SocialHandles/>    
     
     
     
     <img src={Border} alt="Corner-border" className="absolute -right-14 -bottom-12 w-60" />
     
+
+
           </div>  
+          </>
   )
 }
