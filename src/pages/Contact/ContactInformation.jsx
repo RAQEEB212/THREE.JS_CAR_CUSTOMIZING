@@ -52,7 +52,7 @@ toast(
 
   return (
     <>
-     <div className="overflow-hidden lg:w-96 w-full   bg-black p-8 h-full rounded-xl flex flex-col gap-y-16  relative">
+     <div className="overflow-hidden lg:h-[629px] h-auto lg:w-96 w-full   bg-black p-8  rounded-xl flex flex-col gap-y-16  relative">
             {/* heading */}
             <div className="space-y-1.5">
               <h1 className="text-white text-3xl">Contact Information</h1>

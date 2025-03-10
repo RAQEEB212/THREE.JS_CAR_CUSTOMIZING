@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import FormInputField from "../../components/ui/FormInputField";
 import FormInputLabel from "../../components/ui/FormInputLabel";
 import Button from "../../components/ui/Button";
-
+import AnimButton from "../../components/ui/AnimButton"
 import { useForm } from "react-hook-form";
 
 export default function ContactForm() {
@@ -99,27 +99,8 @@ export default function ContactForm() {
         </p>
       </label>
 
-      <Button
-        text="Send Message"
-        className="bg-dark-blue  px-7 py-3 text-base font-medium text-white
-          relative
-          z-50
-          duration-300
-           before:absolute
-           before:-z-10
-           hover:-translate-y-2
-           hover:translate-x-2
-           before:h-full before:w-0
-          hover:before:w-full
-  hover:before:transition-all
-  hover:before:duration-300
-    before:-left-3
-    before:rounded-s-sm
-    before:-bottom-2
-    before:bg-black 
-    before:opacity-30
-          w-fit leading-6  p-2"
-      />
+<AnimButton text="Send Message" properties="bg-dark-blue"/>
+      
     </form>
   );
 }

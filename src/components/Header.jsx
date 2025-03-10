@@ -3,6 +3,8 @@ import Button from "./ui/Button";
 import Tablink from "./ui/Tablink";
 import logo from "../assets/images/logo.png";
 import { FaBars } from "react-icons/fa6";
+import AnimButton from "./ui/AnimButton";
+
 
 export default function Header() {
   return (
@@ -40,27 +42,10 @@ export default function Header() {
     before:opacity-30">
           <FaBars className=" "/>
         </button>
-        <Button
-          className="text-white
-          relative
-          z-50
-          duration-300
-           before:absolute
-           before:-z-10
-           hover:-translate-y-2
-           hover:translate-x-2
-           before:h-full before:w-0
-          hover:before:w-full
-  hover:before:transition-all
-  hover:before:duration-300
-    before:-left-3
-    before:rounded-s-sm
-    before:-bottom-2
-    before:bg-black 
-    before:opacity-30
-          w-fit font-normal leading-6 bg-black p-2"
-          text="login/sign up"
-        />
+
+<AnimButton text="login/sign up" properties="bg-black"/>
+
+       
       </div>
     </header>
   );
