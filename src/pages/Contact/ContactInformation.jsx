@@ -52,7 +52,7 @@ toast(
 
   return (
     <>
-     <div className="overflow-hidden bg-black p-8 rounded-xl space-y-16 relative">
+     <div className="overflow-hidden lg:w-96 w-full   bg-black p-8 h-full rounded-xl flex flex-col gap-y-16  relative">
             {/* heading */}
             <div className="space-y-1.5">
               <h1 className="text-white text-3xl">Contact Information</h1>
@@ -60,8 +60,10 @@ toast(
                 Say something to start a live chat!
               </p>
             </div>
+
+            <div className='flex flex-row gap-x-16 gap-y-16 lg:flex-col '>
             {/* contact Address */}
-            <div className="space-y-7">
+            <div className="space-y-7 ">
               <div className="flex flex-row items-center gap-x-7 text-white">
                 <FaPhone />
                 <button className="font-normal text-base" onClick={numberCopied}>1234567890</button>
@@ -75,10 +77,9 @@ toast(
                 <p className="font-normal text-base">Hyderabad</p>
               </div>
             </div>
-    
             {/* Social links */}
-    <SocialHandles/>    
-    
+    <SocialHandles properties ="max-lg:flex-col gap-y-2"/>    
+    </div>
     
     
     <img src={Border} alt="Corner-border" className="absolute -right-14 -bottom-12 w-60" />

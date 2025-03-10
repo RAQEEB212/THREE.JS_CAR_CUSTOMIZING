@@ -14,7 +14,11 @@
   --breakpoint-tablet:65.625rem;
   --color-medium-gray:#717171;
   --color-light-gray:#C9C9C9;
-  --color-blend-gray:#C4C4C438
+  --color-blend-gray:#C4C4C438;
+  --color-slate-gray:#8D8D8D;
+  --color-dark-blue:#011C2A;
+ --color-medium-black:#011C2A;
+ --shadow-all-over:rgba(0, 0, 0, 0.16) 0px 1px 20px;
 }
 
 body{
