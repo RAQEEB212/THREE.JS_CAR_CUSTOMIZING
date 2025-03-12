@@ -7,8 +7,7 @@ import SidePattern from '../../components/ui/SidePattern'
 import ServiceTrackingCard from './ServiceTrackingCard'
 import workImage from "../../assets/images/work_image.png"
 import TeamWrapper from '../common/TeamWrapper'
-import Button from '../../components/ui/Button'
-
+import AnimButton from '../../components/ui/AnimButton'
 
 
 
@@ -24,7 +23,7 @@ export default function AboutPage() {
     <p className='font-normal text-base text-dark-gray'>We're on a mission to transform the digital landscape through innovative solutions and exceptional user experiences.</p>
     <h1 className='font-semibold text-6xl'>Automotive industry in Pakistan.</h1>
 
-<img src={AboutHero} alt="" className=' rounded-3xl h-[551px] w-full object-cover opacti'/>
+<img src={AboutHero} alt="" className='max-lg:h-96 rounded-3xl h-[551px] w-full object-cover opacti'/>
 
 
 {/* free cutlyouts */}
@@ -37,20 +36,20 @@ export default function AboutPage() {
 {/* ratings card */}
 
     <Wrapper properties='bg-darker-gray p-10 space-y-7 '>
-        <h1 className='font-bold ml-16  text-3xl text-white'>Our Success Numbers
+        <h1 className='font-bold ml-16   text-3xl text-white'>Our Success Numbers
         </h1>
       <ServiceTrackingCard/>
     </Wrapper>
     
     {/* our mission */}
 
-<Wrapper properties='flex flex-col items-center gap-y-10'>
-    <h1 className='font-bold text-5xl  border-t-4 pt-1 w-fit text-center'>Our Mission</h1>
-    <div className='flex gap-7 items-start'>
-<img src={workImage} alt="" className='w-96'/>
+<Wrapper properties='flex flex-col items-center  gap-y-10 '>
+    <h1 className='font-bold text-5xl   border-t-4 pt-1 w-fit text-center'>Our Mission</h1>
+    <div className='flex gap-7  max-mlg:w-full items-start max-mlg:flex-col'>
+<img src={workImage} alt="" className='w-96 max-mlg:w-full max-mlg:h-96 object-cover'/>
 
     
-    <p className='ml-3'>
+    <p className='ml-3 w-96 max-mlg:w-fit'>
         <span className='font-extrabold text-2xl'> &#34; </span>
     Our mission is to provide top-tier automotive services with a commitment to quality, creativity, and customer satisfaction. We strive to make car customization easy, affordable, and accessible for everyone, ensuring every vehicle gets the care and precision it deserves. 
     <span className='font-extrabold text-2xl'> &quot; </span>
@@ -80,7 +79,7 @@ relative before:absolute before:w-full before:left-0 before:h-full before:top-0 
 '>
     <h1 className=' font-bold  text-2xl'>Join the Carbanao team!</h1>
     <p className='font-medium text-base'>Do you want to be part of the Carbanao team? click "join team"</p>
-    <Button text="join team!" className="bg-black"/>
+    <AnimButton text="join team!" properties="bg-black px-10"/>
 
    
 </Wrapper>
