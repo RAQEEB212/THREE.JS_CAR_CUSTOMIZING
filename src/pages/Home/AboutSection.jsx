@@ -2,11 +2,13 @@ import React from 'react'
 import Wrapper from '../../components/ui/Wrapper'
 import aboutImage1 from "../../assets/images/about_image1.jpg";
 import aboutImage2 from "../../assets/images/about_image2.jpg";
+import Title from '../../components/ui/Title';
+
 
 export default function AboutSection() {
   return (
     <Wrapper properties={"flex flex-col items-center gap-y-5"}>
-    <h1 className="font-bold text-5xl text-center mb-7">About Us</h1>
+   <Title text="About Us"/>
     <p className="text-2xl font-normal text-center">Car Banao is an innovative startup revolutionizing the automotive industry in Pakistan. We specialize in providing custom car-building solutions, vehicle design services, and personalized automotive experiences.</p>
     
     <div className="grid grid-cols-2 grid-flow-row gap-5 ">

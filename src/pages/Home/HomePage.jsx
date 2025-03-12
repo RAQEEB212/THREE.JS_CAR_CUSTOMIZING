@@ -12,8 +12,9 @@ import Wrapper from "../../components/ui/Wrapper.jsx";
 import AboutSection from "./AboutSection.jsx";
 import TeamCrousel from "./Carousel/TeamCarousel.jsx";
 import ClientCrousel from "./Carousel/ClientCarousel.jsx";
-import Heading from "./Heading.jsx";
+
 import TeamWrapper from "../common/TeamWrapper.jsx";
+import Title from "../../components/ui/Title.jsx";
 
 
 export default function () {
@@ -24,8 +25,9 @@ export default function () {
       <HeroSection />
 
       {/* our services section */}
-      <Wrapper properties="min-h-[500px]">
-        <Heading text="Our Services" />
+      <Wrapper properties="min-h-[500px] flex flex-col items-center">
+       
+        <Title text="Our Services"/>
         <HomeContentLayout>
 
           {/* image part */}
@@ -46,8 +48,9 @@ export default function () {
       </Wrapper>
 
       {/* Our features section */}
-      <Wrapper properties="min-h-[500px]">
-      <Heading text="Our Features" />
+      <Wrapper properties="min-h-[500px] flex flex-col items-center">
+      
+      <Title text="Our Features"/>
         <HomeContentLayout>
           <ContentList data={listData2}/>
 
@@ -71,7 +74,8 @@ export default function () {
 
       <Wrapper properties={"flex flex-col items-center"}>
        
-        <Heading text="What Our Clients Say?" properties="pb-3 border-b-2" />
+        
+        <Title text="What Our Clients Say?" properties="mb-10"/>
         <ClientCrousel />
       </Wrapper>
 
