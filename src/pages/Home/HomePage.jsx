@@ -13,6 +13,8 @@ import AboutSection from "./AboutSection.jsx";
 import TeamCrousel from "./Carousel/TeamCarousel.jsx";
 import ClientCrousel from "./Carousel/ClientCarousel.jsx";
 import Heading from "./Heading.jsx";
+import TeamWrapper from "../common/TeamWrapper.jsx";
+
 
 export default function () {
   return (
@@ -100,16 +102,7 @@ export default function () {
 
       {/* Our Team */}
 
-      <Wrapper>
-        <h1 className="font-bold text-5xl text-center mb-3">
-          Our Leadership Team
-        </h1>
-        <p className="text-2xl font-normal text-center">
-          Meet the people behind our success
-        </p>
-
-        <TeamCrousel />
-      </Wrapper>
+     <TeamWrapper/>
     </>
   );
 }
