@@ -58,7 +58,7 @@ export default function AboutPage() {
         <Title text="Our Vision" />
 
         <div className=" relative w-full h-full">
-          <div className="relative flex flex-row gap-x-10">
+          <div className="relative flex flex-row gap-x-10 justify-center">
             <div className="relative">
               <VisionaryCards
                 title="Innovation"

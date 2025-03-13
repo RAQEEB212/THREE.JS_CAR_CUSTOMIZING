@@ -1,5 +1,5 @@
 import React from 'react'
-import { teamData } from '../../../data/homePageData'
+import { teamData } from '../../data/homePageData'
 
 
 

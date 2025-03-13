@@ -3,33 +3,26 @@ import HeroSection from "./HeroSection";
 import HomeContentLayout from "./ContentLayout/HomeContentLayout.jsx";
 import contentImage1 from "../../assets/images/home_content_img1.png";
 import contentImage2 from "../../assets/images/home_content_img2.png";
-import contentImageBg1 from "../../assets/images/home_content_bg1.png";
-import contentImageBg2 from "../../assets/images/home_content_bg2.png";
-
+import contentImageBg1 from "../../assets/cutLayouts/home_content_bg1.png";
+import contentImageBg2 from "../../assets/cutLayouts/home_content_bg2.png";
 import ContentList from "./ContentLayout/ContentList.jsx";
 import { listData1, listData2 } from "../../data/homePageData.jsx";
 import Wrapper from "../../components/ui/Wrapper.jsx";
 import AboutSection from "./AboutSection.jsx";
-import TeamCrousel from "./Carousel/TeamCarousel.jsx";
 import ClientCrousel from "./Carousel/ClientCarousel.jsx";
-
 import TeamWrapper from "../common/TeamWrapper.jsx";
 import Title from "../../components/ui/Title.jsx";
-
 
 export default function () {
   return (
     <>
-
-     {/* Hero section */}
+      {/* Hero section */}
       <HeroSection />
 
       {/* our services section */}
       <Wrapper properties="min-h-[500px] flex flex-col items-center">
-       
-        <Title text="Our Services"/>
+        <Title text="Our Services" />
         <HomeContentLayout>
-
           {/* image part */}
           <div className="relative flex-1">
             <img src={contentImage1} className="relative" />
@@ -49,10 +42,9 @@ export default function () {
 
       {/* Our features section */}
       <Wrapper properties="min-h-[500px] flex flex-col items-center">
-      
-      <Title text="Our Features"/>
+        <Title text="Our Features" />
         <HomeContentLayout>
-          <ContentList data={listData2}/>
+          <ContentList data={listData2} />
 
           {/* image part */}
           <div className="relative flex-1">
@@ -69,13 +61,10 @@ export default function () {
         </HomeContentLayout>
       </Wrapper>
 
-
       {/* clients review */}
 
       <Wrapper properties={"flex flex-col items-center"}>
-       
-        
-        <Title text="What Our Clients Say?" properties="mb-10"/>
+        <Title text="What Our Clients Say?" properties="mb-10" />
         <ClientCrousel />
       </Wrapper>
 
@@ -99,14 +88,12 @@ export default function () {
         </div>
       </Wrapper>
 
-
-
       {/* About us */}
       <AboutSection />
 
       {/* Our Team */}
 
-     <TeamWrapper/>
+      <TeamWrapper />
     </>
   );
 }

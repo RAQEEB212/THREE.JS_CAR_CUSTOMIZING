@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from "../assets/images/logo.png"
+import logo from "../assets/images/white_logo.png"
 import SocialHandles from './ui/SocialHandles'
 import Rabta from './ui/Rabta'
 import { Link } from 'react-router-dom'

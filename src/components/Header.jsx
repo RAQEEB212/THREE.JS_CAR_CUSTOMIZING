@@ -1,21 +1,21 @@
 import React from "react";
 import Button from "./ui/Button";
 import Tablink from "./ui/Tablink";
-import logo from "../assets/images/logo.png";
+import logo from "../assets/images/white_logo.png";
 import { FaBars } from "react-icons/fa6";
 import AnimButton from "./ui/AnimButton";
 
 
 export default function Header() {
   return (
-    <header className="flex flex-row items-center gap-x-3 justify-between w-full    pr-28 ">
-      <div className=" bg-black pl-28 w-3/5">
-        <img src={logo} alt="" className="w-3xs h-28  object-cover" />
+    <header className="relative z-50 flex flex-row items-center gap-x-3 justify-between w-full    pr-10 ">
+      <div className="pl-28 w-3/5 ">
+        <img src={logo} alt="" className="w-56 bg-black rounded-[56px] h-24  object-cover" />
       </div>
 
-      <div className="bg-white flex flex-row gap-x-3 justify-end tablet:justify-between items-center w-4/5">
+      <div className="  flex flex-row gap-x-3 justify-end tablet:justify-between items-center w-4/5">
         <nav>
-          <div className="hidden gap-x-8 flex-row items-center  tablet:flex">
+          <div className="bg-black rounded-[56px] text-white px-4 py-2.5 hidden gap-x-8 flex-row items-center  tablet:flex">
             <Tablink text="Home" path="/home" />
             <Tablink text="About" path="/about" />
             <Tablink text="Booking" path="/booking" />

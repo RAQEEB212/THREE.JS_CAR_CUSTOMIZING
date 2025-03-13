@@ -1,5 +1,5 @@
 import React from 'react'
-import TeamCrousel from '../Home/Carousel/TeamCarousel'
+import TeamCrousel from './TeamCarousel'
 import Wrapper from '../../components/ui/Wrapper'
 import Title from '../../components/ui/Title'
 
