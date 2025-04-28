@@ -9,12 +9,7 @@ export default function HeroSection() {
       {/* backcolor effect */}
       <div className="flex flex-row absolute top-0 h-[700px] items-center  justify-between w-full">
         <div className=" bg-black w-2/5 h-full"></div>
-
-       
-
         <img src={heroImage} alt="" className='w-3/5 h-full object-cover '/>
-
-       
       </div>
 
       <div className="pl-32 h-full relative z-50">       

@@ -42,10 +42,7 @@ export default function Header() {
     before:opacity-30">
           <FaBars className=" "/>
         </button>
-
 <AnimButton text="login/sign up" properties="bg-black"/>
-
-       
       </div>
     </header>
   );
